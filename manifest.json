@@ -1,0 +1,24 @@
+{
+  "name": "audit-io-graphql",
+  "vendor": "vtex",
+  "version": "0.1.9",
+  "title": "Audit IO Graphql",
+  "description": "",
+  "mustUpdateAt": "2019-11-28",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "dependencies": {},
+  "builders": {
+    "graphql": "1.x",
+    "node": "3.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "READONLY_USER_DS"
+    }
+  ]
+}

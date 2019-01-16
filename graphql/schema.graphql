@@ -1,0 +1,22 @@
+#Building a contract
+type CLDataType {
+  firstName: String
+  lastName: String
+  email: String
+}
+
+
+# Specifies the available queries.
+# The resolvers for this query are implemented in here: node/graphql/index.ts
+#The statement below sends MasterData an ID of type string and returns a CLDataType Object which we defined above
+type Query {
+  getClientById(
+    id: String!
+  ): CLDataType
+  #The statement below allows us to pass optional filters when requesting a CLDataType.
+  searchClientWithAllPossibleFilters(
+    where: String,
+    from: Int,
+    to: Int,
+  ): [CLDataType]
+}
